@@ -8,11 +8,6 @@ This Linux kernel module sets a watchpoint on a specified memory address. When t
 2. The module sets a hardware breakpoint (watchpoint) on the specified memory address.
 3. Upon access to this memory address (read or write), the module invokes its callbacks (separate for read and write operations) and prints a backtrace.
 
-#### Compatibility and Important Information
-This module was developed for version 6.9.6-200.fc40.x86_64 of Linux on Fedora Workstation 40. To verify your kernel headers, use the `uname -r` command.
-
-The process of building the Linux distribution image using Yocto can vary widely in duration, from minutes to over 24 hours, depending on your computer's capabilities. Ensure you have at least 90 gigabytes of free hard drive space before initiating the build.
-
 #### File Descriptions
 This module consists of two modules eventually: the source code for both modules and their corresponding Makefile located in `recipes-kernel/mwatch-mod/files/`.
 
@@ -20,6 +15,11 @@ However, this module's implementation is designed for building via Yocto for the
 
 Comprehensive Yocto documentation is available on their official website:
 [https://docs.yoctoproject.org/index.html](https://docs.yoctoproject.org/index.html)
+
+#### Compatibility and Important Information
+This module was developed for version 6.9.6-200.fc40.x86_64 of Linux on Fedora Workstation 40. To verify your kernel headers, use the `uname -r` command.
+
+The process of building the Linux distribution image using Yocto can vary widely in duration, from minutes to over 24 hours, depending on your computer's capabilities. Ensure you have at least 90 gigabytes of free hard drive space before initiating the build.
 
 #### Module Operation
 **test_mwatch:**
