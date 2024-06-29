@@ -1,7 +1,7 @@
 ## Linux Kernel Module
 
 #### Overview
-This Linux kernel module sets a watchpoint on a specified memory address. When this memory address is accessed, the module triggers its callbacks.
+This Linux kernel module sets a watchpoint (hardware breakpoint) on a specified memory address. When this memory address is accessed, the module triggers its callbacks.
 
 #### Functionality
 1. The memory address to monitor is set via a module parameter and can be modified through the sysfs entry located at `/sys/module/mwatch/parameters/mwatch_addr`.
