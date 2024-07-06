@@ -169,6 +169,7 @@ poweroff
 **Loading modules directly into your kernel without a virtual machine is strongly discouraged unless you are experienced.** Simply compile the modules using the provided Makefile:
 
 ```shell
+make
 sudo su
 insmod test_mwatch.ko
 insmod mwatch.ko
@@ -184,6 +185,7 @@ Ensure no instances of these modules are running:
 
 ```shell
 lsmod | grep mwatch
+make clean
 ```
 The output should be empty.
 
